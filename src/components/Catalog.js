@@ -1,36 +1,40 @@
+
 import React from 'react'
 import '../App.css';
 //import {Card, Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import CatalogData from './CatalogData'
+import CatalogProps from './CatalogProps';
 import { Link } from 'react-router-dom';
 const Catalog = () => {
-   
+  
   return (
-    <div className="head">
+    <div className="cataloghead">
     {CatalogData.map((item)=>{
         return (
-           <div class="wrapper"  key={item.id}>
-            
-              <div class="card">
-                <div class="card-body">
-                    <img src={item.image}className="card-img-top"/>
-                    <section className='textsection'>
-                  <h5 class="card-title">{item.title}</h5>
-                  <p class="card-price">{item.price} ლარი </p>
-                  <Link to={`./${item.id}`} className="links">
-                  <button class="btn btn-primary">მეტი</button>
-                    </Link>
-                  </section>
-                </div>
-              </div>
-            
-           
-          </div>
+          <>
+      <CatalogProps 
+      image={item.image} 
+      h1={item.title}
+       h4={item.price}
+        info={item.information}
+  
+          navigator= {  <Link to={`../Catalog/${item.id}` }  className="links">
+        
+            {/* add button */}
+          <button className="btn btn-primary">add more</button>
+        </Link>}
+     />
+  
+     {/* ase mushaobs damatebis gilaki */}
+    
+                 </>
         
         )  
     })}
+     
    </div>
+  
   )
 }
 

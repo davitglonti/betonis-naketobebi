@@ -21,7 +21,7 @@ import { Nav, Navbar, NavDropdown, Container} from 'react-bootstrap'
             
           <NavDropdown.Divider />
           </NavDropdown>
-          <Nav.Link href="#action5">Home</Nav.Link>
+          <Nav.Link href="Completedprojects">Home</Nav.Link>
           <Nav.Link href="Catalog">სრული კატალოგი</Nav.Link>
           
         </div>
@@ -30,4 +30,4 @@ import { Nav, Navbar, NavDropdown, Container} from 'react-bootstrap'
   </Navbar>
   )
 }
-export default Navigationbar
+export default Navigationbar;

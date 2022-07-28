@@ -1,0 +1,89 @@
+.footer {
+    font-family: 'Share Tech', sans-serif;
+    
+    color: white;
+   padding: 0;
+   margin: 0;
+    width: 100%;
+    height: 40vh;
+    text-shadow: 8px 8px 10px #0000008c;
+    background-color: #343a40;
+    background-image: url("https://www.ivymax.com/wp-content/uploads/2014/12/footer-background.jpg"), linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ 
+h1 {
+    margin: 20px;
+}
+.section {
+    width: 100px;
+    height: 200px;
+}
+.footerinfo{
+    display: flex;
+    justify-content:space-around
+}
+.footericon{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    position:relative;
+    bottom:70px;
+    right: 40px;
+    gap: 20px;
+    margin: -20;
+}
+.icon:hover{
+    transform: rotate(350deg);
+}
+
+.icon{
+    font-size: 30px;
+}
+
+.whe {
+    position: relative;
+    top: 20px;
+display: grid;
+grid-template-columns: auto auto auto auto;
+justify-content: space-around;
+margin: 60px;
+
+
+}
+
+.li{
+    background-color: rgba(219, 211, 134, 0.336);
+   
+}
+
+.li:hover{
+    background-color: green;
+   
+}
+
+.infoicon{
+    width: 80px;
+    position: relative;
+    left: 33%;
+    
+}
+.service {
+    text-align: center;
+   
+}
+.advantages{
+    position: relative;
+    top: 60px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .whe{
+        display: grid;
+        grid-template-columns: auto ;
+        gap:10px
+    }
+}
+
